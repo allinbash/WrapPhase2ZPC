@@ -1,0 +1,48 @@
+# use a fixed random seed to guarantee that when you run the code twice you will get the same outcome
+manual_seed:
+# device configuration
+device: 'cuda:0'
+# operating mode, True for training or False for prediction
+train: True
+# base direction
+base_dir: '/home/ezio/Documents/python/ZPFNet'
+# dataset configuration
+data:
+  training:
+    # path concatenate to 'base_dir'
+    path: 'dataset/training/tr_MEMS_z9_mixnoise.h5'
+    name:
+      # name of input data, e.g., raw
+      - raw
+      # name of ground-truth, e.g., label
+      - label
+    batch_size: 128
+    num_worker: 8
+    shuffle: True
+    transform:
+    occupy: 0.9
+  prediction:
+    # path concatenate to 'base_dir'
+    path: ''
+    name:
+      # name of input data for prediction, e.g., raw
+      - raw
+      # other data for custom
+      - label
+    batch_size: 1
+    num_worker: 8
+    shuffle: False
+    transform:
+# model configuration
+model:
+  name: ResNet18
+  in_channels: 1
+  out_channels: 9
+# train configuration
+trainer:
+  loss: RMSELoss
+  epoch: 60
+  lr: 3e-4
+predictor:
+  # path concatenate to 'base_dir'
+  checkpoint: ''
