@@ -1,2 +1,2 @@
 # WrapPhase2ZPC
-Wrapped phase to Zernike polynomial
+Wrapped phase to Zernike polynomial coefficients.
