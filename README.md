@@ -1,5 +1,5 @@
 # WrapPhase2ZPC
-Wrapped phase to Zernike polynomial coefficients.
+**Wrapped phase to Zernike polynomial coefficients.**
 
 ## Directory Tree
 ```
@@ -28,7 +28,7 @@ Wrapped phase to Zernike polynomial coefficients.
 ```
 
 ## Environment
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ## Train
-python --config config.yml
+`python --config config.yml`
