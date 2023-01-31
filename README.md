@@ -2,28 +2,30 @@
 Wrapped phase to Zernike polynomial coefficients.
 
 ## Directory Tree
-.<br>
-├── LICENSE<br>
-├── README.md<br>
-├── checkpoint<br>
-│   ├── best.pth<br>
-│   └── best_params.pth<br>
-├── config.yml<br>
-├── dataset<br>
-│   ├── prediction<br>
-│   |   └── pr_data.h5<br>
-│   └── training<br>
-│       └── tr_data.h5<br>
-├── logs<br>
-├── main.py<br>
-├── requirements.txt<br>
-└── utils<br>
-    ├── config.py<br>
-    ├── data.py<br>
-    ├── losses.py<br>
-    ├── module.py<br>
-    ├── predictor.py<br>
-    └── trainer.py<br>
+```
+.
+├── LICENSE
+├── README.md
+├── checkpoint
+│   ├── best.pth
+│   └── best_params.pth
+├── config.yml
+├── dataset
+│   ├── prediction
+│   |   └── pr_data.h5
+│   └── training
+│       └── tr_data.h5
+├── logs
+├── main.py
+├── requirements.txt
+└── utils
+    ├── config.py
+    ├── data.py
+    ├── losses.py
+    ├── module.py
+    ├── predictor.py
+    └── trainer.py
+```
 
 ## Environment
 pip install -r requirements.txt
